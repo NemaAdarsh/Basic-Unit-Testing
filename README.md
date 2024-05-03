@@ -12,6 +12,7 @@ To run the unit tests, simply execute the `first_test.py` script using Python:
 
 ```bash
 python first_test.py
+```
 
 Dependencies
 This script requires Python 3.x to be installed on your system.
