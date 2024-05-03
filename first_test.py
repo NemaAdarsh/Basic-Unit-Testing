@@ -130,4 +130,9 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(generate_fibonacci(10), [0, 1, 1, 2, 3, 5, 8, 13, 21, 34])
 
 if __name__ == '__main__':
-    unittest.main()
+    test_suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestStringMethods)
+    test_result = unittest.TextTestRunner().run(test_suite)
+    if test_result.wasSuccessful():
+        print('\x1b[32mBUILD SUCCESSFUL\x1b[0m')
+    else:
+        print('\x1b[31mBUILD FAILED\x1b[0m')
